@@ -135,6 +135,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
    
 --To count the total number of rows
+
 '''sql
 
 	
@@ -154,6 +155,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --To find null values
+
 '''sql
 
 	  SELECT * FROM retail_sales
@@ -182,6 +184,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
 
 --To delete null values that aren't useful
+
 '''sql
 
 	DELETE FROM retail_sales
@@ -196,6 +199,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
 
 --To replace null values in a single column
+
 '''sql
 
 	UPDATE retail_sales
@@ -206,6 +210,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 --Data Exploration
 
 --how many sales do we have?
+
 '''sql
 
 	SELECT 
@@ -214,6 +219,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''	
 
 --how many unique customers do we have?
+
 '''sql
 
 	SELECT 
@@ -223,6 +229,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --how many unique categories do we have?
+
 '''sql
 
 	SELECT 
@@ -234,6 +241,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 --DATA ANALYSIS BUSINESS KEY PROBLEMS AND ANSWERS
 
 --Q1 Write a query to retrieve all the columns for sales made on 2022-11-05
+
 '''sql
 
 	SELECT *
@@ -242,7 +250,8 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
 
 
---Q2 Write a query to retrieve all transactions where the category is clothing and the quantity sold is more than 4 in the month of Nov, 2022.	
+--Q2 Write a query to retrieve all transactions where the category is clothing and the quantity sold is more than 4 in the month of Nov, 2022.
+
 '''sql
 
 	SELECT *
@@ -252,6 +261,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
 
 --Q3 Write a query to calculate total sales (total_sale) for each category
+
 '''sql
 
 	SELECT category,
@@ -262,6 +272,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 	'''
 
 --Q4 Write a query to find the average age of customers who purchased items from beauty category
+
 '''sql
 
 	  SELECT 
@@ -270,7 +281,8 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 	  	WHERE category = 'Beauty';
 '''
 
---Q5 Write a query to find all transactions where total sales is greater than 1000	
+--Q5 Write a query to find all transactions where total sales is greater than 1000
+
 '''sql
 
 	SELECT *
@@ -280,6 +292,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --Q6 Write a query to find the total number of transactions made by each gender in each category.
+
 '''sql
 
 	SELECT gender, category,
@@ -291,6 +304,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --Q7 Write a query to calculate the average sale for each month. Find out best-selling months in each year.
+
 '''sql
 
 	SELECT year, month,avg_sales
@@ -309,6 +323,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --Q8 Write a query to find top 5 customers based on the highest total sales
+
 '''sql
 
 	SELECT customer_id,
@@ -320,6 +335,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 '''
 
 --Q9 Write a query to find the number of unique customers who purchased items from each category
+
 '''sql
 
 	SELECT category,
@@ -330,6 +346,7 @@ Checked for any missing values (NULLs) across columns and handled them by deleti
 
 
 --Q10 Write a query to create each shift and number of orders (Example, morning <12, afternoon between 12 and 17, and evening > 17)
+
 '''sql
 
 	WITH hourly_sale
